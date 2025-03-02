@@ -33,7 +33,22 @@ spec:
       containers:
         - image: ghcr.io/takakiaraki09/example-k8s-database:latest
           name: mysql
-          resources:
+          env:
+            - name: MYSQL_USER
+              valueFrom:
+                secretKeyRef:
+                  name: db-user-pass
+                  key: username
+            - name: MYSQL_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: db-user-pass
+                  key: password
+            - name: MYSQL_ROOT_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: db-user-pass
+                  key: password
           ports:
             - containerPort: 3306
               name: mysql
