@@ -11,7 +11,7 @@ spec:
     matchLabels:
       app: nginx
   # レプリカ数: レプリカとは複数のことで、ここの数字分の Pod を常に起動させる
-  replicas: 3
+  replicas: 1
   # 作成する Pod の定義
   template:
     metadata:
