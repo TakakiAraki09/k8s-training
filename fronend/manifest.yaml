@@ -32,6 +32,13 @@ spec:
     spec:
       containers:
         - image: ghcr.io/takakiaraki09/example-k8s-frontend:latest
+          resources:
+            limits:
+              memory: 512Mi
+              cpu: "1"
+            requests:
+              memory: 256Mi
+              cpu: "0.2"
           name: frontend
           ports:
             - containerPort: 3000
