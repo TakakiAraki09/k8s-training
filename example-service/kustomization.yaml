@@ -3,7 +3,6 @@ kind: Kustomization
 
 # 子ディレクトリをネストで参照
 resources:
-  - backend
   - dashboard
   - fronend
   - secrets
