@@ -9,4 +9,4 @@ resources:
 
 # ルートと同様の共通ラベル
 commonLabels:
-  app: example-app
+  app: example-service

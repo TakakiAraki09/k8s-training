@@ -7,4 +7,4 @@ resources:
 
 # ルートおよびサブディレクトリ共通ラベル
 commonLabels:
-  app: example-app
+  app: example-frontend
