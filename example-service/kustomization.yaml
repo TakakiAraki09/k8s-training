@@ -1,0 +1,13 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+# 子ディレクトリをネストで参照
+resources:
+  - backend
+  - dashboard
+  - fronend
+  - secrets
+
+# ルートと同様の共通ラベル
+commonLabels:
+  app: example-app

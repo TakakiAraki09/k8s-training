@@ -5,6 +5,6 @@ kind: Kustomization
 resources:
   - manifest.yaml
 
-# 共通ラベル（必要に応じて設定）
+# ルートおよびサブディレクトリ共通ラベル
 commonLabels:
   app: example-app
