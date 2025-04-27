@@ -59,4 +59,5 @@ spec:
             - name: DB_PORT
               value: "3306"
             - name: DB_HOST
-              value: "localhost"
+              value: "mysql-server"
+
