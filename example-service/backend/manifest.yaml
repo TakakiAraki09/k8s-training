@@ -47,10 +47,11 @@ spec:
               name: backend
           env:
             - name: DB_USER
-              valueFrom:
-                secretKeyRef:
-                  name: db-user-pass
-                  key: username
+              value: "root"
+            #  valueFrom:
+            #    secretKeyRef:
+            #      name: db-user-pass
+            #      key: username
             - name: DB_PASSWORD
               valueFrom:
                 secretKeyRef:
